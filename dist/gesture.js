@@ -11,6 +11,8 @@
  * single-gesture.js
  */
 
+'use strict'
+
 var document = window.document
 
 /**
@@ -133,5 +135,6 @@ function assign(target) {
   }
   return target
 }
+
 return Gesture;
 }));

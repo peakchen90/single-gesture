@@ -2,6 +2,8 @@
  * single-gesture.js
  */
 
+'use strict'
+
 var document = window.document
 
 /**
