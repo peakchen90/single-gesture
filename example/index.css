@@ -3,9 +3,18 @@ body {
   min-height: 100%;
 }
 
+.info {
+  font-size: 12px;
+  color: #888;
+}
+
+.info p {
+  margin: 3px;
+}
+
 #box {
   position: absolute;
-  top: 20px;
+  top: 100px;
   left: 20px;
   width: 120px;
   height: 100px;

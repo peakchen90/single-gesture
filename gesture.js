@@ -46,7 +46,7 @@ Gesture.prototype.ondrag = function (listener) {
   this.on('mousedown', function (e) {
     cache.x = e.pageX
     cache.y = e.pageY
-    cache.time = Date.now
+    cache.time = Date.now()
     document.addEventListener('mousemove', mouseMove)
     document.addEventListener('mouseup', documentMouseUp)
   })
@@ -81,7 +81,7 @@ Gesture.prototype.ondrag = function (listener) {
   this.on('touchstart', function (e) {
     cache.x = e.touches[0].pageX
     cache.y = e.touches[0].pageY
-    cache.time = Date.now
+    cache.time = Date.now()
     document.addEventListener('touchmove', touchMove)
     document.addEventListener('touchend', documentTouchEnd)
   })
