@@ -3,8 +3,11 @@
 ## 安装
 ```bash
 npm install --save single-gesture
+# 或者在浏览器中引用 /dist/gesture.js 文件
 ```
-或者在浏览器中引用 /dist/gesture.js 文件
+
+## 浏览器兼容性
+支持 IE9 及以上浏览器，移动端浏览器
 
 ## 使用示例
 ```javascript

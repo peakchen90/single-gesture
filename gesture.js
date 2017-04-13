@@ -37,6 +37,10 @@ Gesture.prototype.ondrag = function (listener) {
     y: 0,
     time: Date.now()
   }
+
+  /**
+   * pc
+   */
   this.on('mousedown', function (e) {
     cache.x = e.pageX
     cache.y = e.pageY
@@ -62,9 +66,43 @@ Gesture.prototype.ondrag = function (listener) {
       deltaY: e.pageY - cache.y,
       interval: Date.now() - cache.time
     }
-
     cache.x = e.pageX
     cache.y = e.pageY
+    cache.time = Date.now()
+    listener.call(self.el, assign(e, { gesture: detail }))
+  }
+
+
+  /**
+   * mobile
+   */
+  this.on('touchstart', function (e) {
+    cache.x = e.touches[0].pageX
+    cache.y = e.touches[0].pageY
+    cache.time = Date.now
+    document.addEventListener('touchmove', touchMove)
+    document.addEventListener('touchend', documentTouchEnd)
+  })
+
+  /**
+   * document触摸结束
+   */
+  function documentTouchEnd(e) {
+    document.removeEventListener('touchmove', touchMove)
+    document.removeEventListener('touchend', documentTouchEnd)
+  }
+
+  /**
+   * 触摸移动
+   */
+  function touchMove(e) {
+    var detail = {
+      deltaX: e.touches[0].pageX - cache.x,
+      deltaY: e.touches[0].pageY - cache.y,
+      interval: Date.now() - cache.time
+    }
+    cache.x = e.touches[0].pageX
+    cache.y = e.touches[0].pageY
     cache.time = Date.now()
     listener.call(self.el, assign(e, { gesture: detail }))
   }
