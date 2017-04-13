@@ -1,0 +1,13 @@
+html,
+body {
+  min-height: 100%;
+}
+
+#box {
+  position: absolute;
+  width: 120px;
+  height: 100px;
+  background: #eee;
+  border: 1px solid #ccc;
+  cursor: move;
+}

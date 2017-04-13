@@ -1,0 +1,28 @@
+{
+  "name": "single-gesture",
+  "version": "0.0.1",
+  "description": "single gesture",
+  "main": "dist/gesture.js",
+  "scripts": {
+    "build": "gulp umd"
+  },
+  "keywords": [
+    "single",
+    "gesture",
+    "drag",
+    "event"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peakchen90/single-gesture"
+  },
+  "bugs": {
+    "url": "https://github.com/peakchen90/single-gesture/issues"
+  },
+  "author": "peakchen90 <1558267774@qq.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-umd": "^0.2.1"
+  }
+}
