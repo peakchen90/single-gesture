@@ -1,5 +1,8 @@
 # single-gesture
 
+## DEMO
+[http://app.imchen.cc/single-gesture/](http://app.imchen.cc/single-gesture/)
+
 ## 安装
 ```bash
 npm install --save single-gesture
