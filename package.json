@@ -1,6 +1,6 @@
 {
   "name": "single-gesture",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "single gesture",
   "main": "dist/gesture.js",
   "scripts": {
