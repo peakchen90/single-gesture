@@ -44,6 +44,7 @@ Gesture.prototype.ondrag = function (listener) {
    * pc
    */
   this.on('mousedown', function (e) {
+    e.preventDefault()
     cache.x = e.pageX
     cache.y = e.pageY
     cache.time = Date.now()
@@ -79,6 +80,7 @@ Gesture.prototype.ondrag = function (listener) {
    * mobile
    */
   this.on('touchstart', function (e) {
+    console.log('########### mobile ############')
     cache.x = e.touches[0].pageX
     cache.y = e.touches[0].pageY
     cache.time = Date.now()

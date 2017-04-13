@@ -21,4 +21,5 @@ body {
   background: #eee;
   border: 1px solid #ccc;
   cursor: move;
+  opacity: 0.7;
 }
