@@ -1,7 +1,7 @@
 # single-gesture
 
 ## DEMO
-[http://app.imchen.cc/single-gesture/](http://app.imchen.cc/single-gesture/)
+[http://i.imchen.cc/single-gesture/](http://i.imchen.cc/single-gesture/)
 
 ## 安装
 ```bash
