@@ -1,7 +1,7 @@
 # single-gesture
 
 ## DEMO
-[http://i.imchen.cc/single-gesture/](http://i.imchen.cc/single-gesture/)
+[https://peakchen90.github.io/single-gesture/](https://peakchen90.github.io/single-gesture/)
 
 ## 安装
 ```bash
